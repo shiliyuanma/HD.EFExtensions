@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>EF6扩展库</title>
+    <authors>huangdong</authors>
+    <owners>FollowMe</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EF6批量增删改的扩展库</description>
+    <releaseNotes>EF6批量增删改的扩展库</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>EF6 EF</tags>
+  </metadata>
+</package>

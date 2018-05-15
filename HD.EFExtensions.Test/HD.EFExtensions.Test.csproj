@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05402B42-7F00-4839-B16C-BD3469545452}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HD.EFExtensions.Test</RootNamespace>
+    <AssemblyName>HD.EFExtensions.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FMMemberDbContext.cs" />
+    <Compile Include="Mapping\MTradeTypeConfigMap.cs" />
+    <Compile Include="Mapping\MV2ApplyCommissionInfoMap.cs" />
+    <Compile Include="Mapping\Mv2CommissiondailyMap.cs" />
+    <Compile Include="Mapping\Mv2CommissiondetailsMap.cs" />
+    <Compile Include="Mapping\Mv2CommissionrewardMap.cs" />
+    <Compile Include="Mapping\Mv2ExcludeaccountMap.cs" />
+    <Compile Include="Mapping\Mv2MemberbusinesstypeMap.cs" />
+    <Compile Include="Mapping\Mv2MembercommissionsummaryMap.cs" />
+    <Compile Include="Mapping\Mv2MemberdailyMap.cs" />
+    <Compile Include="Mapping\Mv2MemberdepartmentMap.cs" />
+    <Compile Include="Mapping\Mv2MemberinfoMap.cs" />
+    <Compile Include="Mapping\Mv2MemberrelationshipMap.cs" />
+    <Compile Include="Mapping\Mv2MemberReturngroupMap.cs" />
+    <Compile Include="Mapping\Mv2ReturnconfigMap.cs" />
+    <Compile Include="Mapping\Mv2ReturngroupMap.cs" />
+    <Compile Include="Mapping\Mv2ReturngroupReturnconfigMap.cs" />
+    <Compile Include="Mapping\Mv2SpecialsymbolMap.cs" />
+    <Compile Include="Mapping\Mv2UserDevicetokenMap.cs" />
+    <Compile Include="Mapping\Mv2UserMemberMap.cs" />
+    <Compile Include="Mapping\TUserAccountMap.cs" />
+    <Compile Include="Mapping\UUserMap.cs" />
+    <Compile Include="Entity\MTradetypeconfig.cs" />
+    <Compile Include="Entity\Mv2Applycommissioninfo.cs" />
+    <Compile Include="Entity\Mv2Commissiondaily.cs" />
+    <Compile Include="Entity\MV2CommissionDetails.cs" />
+    <Compile Include="Entity\MV2CommissionReward.cs" />
+    <Compile Include="Entity\MV2ExcludeAccount.cs" />
+    <Compile Include="Entity\MV2MemberBusinessType.cs" />
+    <Compile Include="Entity\MV2MemberCommissionSummary.cs" />
+    <Compile Include="Entity\MV2MemberDaily.cs" />
+    <Compile Include="Entity\MV2MemberDepartment.cs" />
+    <Compile Include="Entity\MV2MemberInfo.cs" />
+    <Compile Include="Entity\MV2MemberRelationShip.cs" />
+    <Compile Include="Entity\MV2MemberReturnGroup.cs" />
+    <Compile Include="Entity\MV2ReturnConfig.cs" />
+    <Compile Include="Entity\MV2ReturnGroup.cs" />
+    <Compile Include="Entity\MV2ReturnGroupReturnConfig.cs" />
+    <Compile Include="Entity\MV2SpecialSymbol.cs" />
+    <Compile Include="Entity\MV2UserDeviceToken.cs" />
+    <Compile Include="Entity\MV2UserMember.cs" />
+    <Compile Include="Entity\TUserAccount.cs" />
+    <Compile Include="Entity\UUser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HD.EFExtensions\HD.EFExtensions.csproj">
+      <Project>{d9fca660-cf7a-4750-ae15-f45577f44569}</Project>
+      <Name>HD.EFExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
